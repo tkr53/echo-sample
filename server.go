@@ -13,5 +13,5 @@ func main() {
 		return c.String(http.StatusOK, "Hello World!")
 	})
 	port := os.Getenv("PORT")
-	e.Logger.Fatal(e.Start(port))
+	e.Logger.Fatal(e.Start(":" + port))
 }
